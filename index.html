@@ -10,11 +10,16 @@
 
 <body>
     <div class="container">
-        <form class="">
-            <input type="search" id="inputSearch" class="formControl" placeholder="Search for any movies">
-            <button type="submit" class="search"> Search </button>
+        <form class="searchForm">
+            <input type="search" id="inputSearch" class="formControl" placeholder="Search for a movie">
+            <button type="submit" id="buttonSearch" class="search"> Search </button>
         </form>
     </div>
+    <div class="container">
+        <div id="movies" class="row"></div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="JS/main.js"></script>
 </body>
 
 </html>
