@@ -5,21 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" href="CSS/styles.css" rel="stylesheet">
     <title>24-Frames</title>
 </head>
 
 <body>
     <div class="container">
-        <form class="searchForm">
-            <input type="search" id="inputSearch" class="formControl" placeholder="Search for a movie">
-            <button type="submit" id="buttonSearch" class="search"> Search </button>
+        <form>
+            <div class="form-group">
+                <input type="search" id="input-search" class="form-control" placeholder="Search for a movie" />
+            </div>
+            <button type="submit" id="search" class="btn"> 
+                Search a movie 
+            </button>
         </form>
+
+        <div id="movies-container"></div>
     </div>
-    <div class="container">
-        <div id="movies" class="row"></div>
-    </div>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="JS/main.js"></script>
+
+    <script src="JS/apiSearch.js"></script>
+    <script src="JS/app.js"></script>
 </body>
 
 </html>
