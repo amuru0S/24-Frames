@@ -10,20 +10,19 @@
 </head>
 
 <body>
-    <div class="container">
-        <form>
-            <div class="form-group">
-                <input type="search" id="input-search" class="form-control" placeholder="Search for a movie" />
-            </div>
-            <button type="submit" id="search" class="btn">
-                 Search a movie
+    <div class="form-container">
+        <form id="searchForm">
+            <input type="search" id="searchTxt" class="form-control" placeholder="Search a movie" />
+            <button type="submit" id="search" class="btn"> 
+                Search 
             </button>
         </form>
-
-        <div id="movies-container"></div>
+      
+    <div class="movies-container">
+        <div id="movies"></div>
     </div>
-    <script src="JS/apiSearch.js"></script>
-    <script src="JS/app.js"></script>
+
+    <script src="JS/main.js"></script>
 </body>
 
 </html>
