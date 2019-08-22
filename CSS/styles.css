@@ -4,7 +4,6 @@ html {
 
 body {
     background-color: #852330;
-    /* width: 50%; */
 }
 
 .container {
@@ -112,17 +111,18 @@ figure:hover {
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.45);
     margin: 2%;
     padding: 0.5% 0.5% 0% 0.5%;
 }
 
 .movieDetails {
     float: right;
-    text-align: center;
+    text-align: left;
 }
 
 .movieDetails h2 {
+    margin-left: 40px;
     font-size: 40px;
     font-weight: 900;
     color: #fff;
@@ -130,9 +130,14 @@ figure:hover {
 }
 
 .list-group ul {
+    word-spacing: 1px;
     list-style: none;
     text-indent: -1.3em;
     margin-left: 0;
+}
+
+strong {
+    margin-right: 10px;
 }
 
 ul li::before {
@@ -160,6 +165,20 @@ ul li {
     font-weight: 500;
     color: #fff;
     text-transform: capitalize;
+    font-family: 'Livvic', sans-serif;
+}
+
+.extraInfo span {
+    margin-top: 1px;
+    word-spacing: 1px;
+    font-size: 1em;
+    font-family: 'Livvic', sans-serif;
+}
+
+.extraInfo a {
+    text-decoration: none;
+    font-family: 'Livvic', sans-serif;
+    padding: 10px;
 }
 
 .imdb,
@@ -172,12 +191,8 @@ ul li {
     background: #fff;
 }
 
-
-/* @media(min-width:960px) {
-    #movies .col-md-3 .well {
-        height: 390px;
+@media (max-width:629px) {
+    #movie img {
+        display: none;
     }
-    #movies .col-md-3 img {
-        height: 240px;
-    }
-} */
+}
