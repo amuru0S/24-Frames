@@ -84,33 +84,3 @@ const renderMovie = (movie) => {
 
     document.querySelector('#movie').innerHTML = output;
 }
-
-// window.addEventListener('scroll', () => {
-//     if (document.documentElement.scrollHeight - document.documentElement.scrollTop === document.documentElement.clientHeight) {
-//       getMovies(document.getElementById('movies').value)
-//     }
-// })
-
-// const scrollHandler = () => {
-//     var load = document.getElementById('movies');
-//     var contentHeight = load.offsetHeight;
-//     var yOffset = window.pageYOffset;
-//     var y = yOffset + window.innerHeight;
-//     if(y >= contentHeight) {
-//         load.innerHTML += load.addEventListener('scroll', getMovies);
-//     }
-//     console.log(load);
-// }
-
-// window.onscroll = scrollHandler();
-
-
-
-
-
-
-
-
-
-
-
