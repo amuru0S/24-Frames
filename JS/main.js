@@ -8,6 +8,7 @@ const getMovies = (e) => {
         .then(res => res.json())
         .then(({ Search }) => renderMovies(Search))
         .catch(err => console.log(err))
+    console.log(getMovies);
 }
 
 if (document.querySelector('#searchForm')) {
@@ -16,25 +17,23 @@ if (document.querySelector('#searchForm')) {
 }
 
 const renderMovies = (movies) => {
-    let output = '';
+    let output = '<div class="flex-grid-container">';
     for (let i = 0; i < movies.length; i++) {
         let Poster = movies[i].Poster;
         let Title = movies[i].Title;
         let ID = movies[i].imdbID;
-
+        
         output += `
-                <div class="col-md-3">
-                    <div class="well text-center">
-                    <img src="${Poster}">
-                    <h5>${Title}</h5>
-                    <a onClick="moviesSelected('${ID}')" class="btn btn-primary" href="#">Movies Details</a>
-                    </div>
-                </div>
+                    <figure>
+                    <img class="scaled" onClick="moviesSelected('${ID}')" href="#" src="${Poster}" alt="Image of the Movie"/>
+                    <figCaption>${Title}</figCaption>
+                    </figure>
+                
                 `;
     }
+    output += '</div>';
     document.querySelector('#movies').innerHTML = output;
-
-
+    console.log(movies);
 }
 
 const moviesSelected = (ID) => {
@@ -57,34 +56,61 @@ const getMovie = () =>  {
 const renderMovie = (movie) => {
 
     let output = `
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="${movie.Poster}">
+            <div class="movies-container">
+                <div id="movie">
+                    <img class="scaled" src="${movie.Poster}">
                 </div>
-
-                <div class="col-md-8">
-                <h2>${movie.Title}</h2>
-                <ul class="list-group">
-                    <li class="list-group-item"><strong>Genre:</strong>${movie.Genre}</li>
-                    <li class="list-group-item"><strong>Released:</strong>${movie.Released}</li>
-                    <li class="list-group-item"><strong>Rated:</strong>${movie.Rated}</li>
-                    <li class="list-group-item"><strong>IMDB Rating:</strong>${movie.imdbRating}</li>
-                    <li class="list-group-item"><strong>Director:</strong>${movie.Director}</li>
-                    <li class="list-group-item"><strong>Writer:</strong>${movie.Writer}</li>
-                    <li class="list-group-item"><strong>Actors:</strong>${movie.Actors}</li>
-                </ul>
-
+                <div class="movieDetails">
+                    <h2>${movie.Title}</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Genre: </strong>${movie.Genre}</li>
+                        <li class="list-group-item"><strong>Released: </strong>${movie.Released}</li>
+                        <li class="list-group-item"><strong>Rated: </strong>${movie.Rated}</li>
+                        <li class="list-group-item"><strong>IMDB Rating: </strong>${movie.imdbRating}</li>
+                        <li class="list-group-item"><strong>Director: </strong>${movie.Director}</li>
+                        <li class="list-group-item"><strong>Writer: </strong>${movie.Writer}</li>
+                        <li class="list-group-item"><strong>Actors: </strong>${movie.Actors}</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="well">
-                    <h3>Plot</h3>${movie.Plot}
-                    <hr>
-                    <a href="http://imdb.com/title/${movie.imdbID} "target="_blank " class="btn btn-primary mr-2 my-1">View IMDB</a> 
-                    <a href = "index.html" class = "btn btn-primary my-1"> Go Back to Search </a> 
-                </div> 
+            <div class="extraInfo">
+                <h3>Plot</h3>${movie.Plot}
+                <hr>
+                <a href="http://imdb.com/title/${movie.imdbID} "target="_blank " class="imdb">View IMDB</a> 
+                <a href = "index.html" class = "goHome"> Go Back to Search </a> 
+                
             </div>`;
 
     document.querySelector('#movie').innerHTML = output;
 }
+
+// window.addEventListener('scroll', () => {
+//     if (document.documentElement.scrollHeight - document.documentElement.scrollTop === document.documentElement.clientHeight) {
+//       getMovies(document.getElementById('movies').value)
+//     }
+// })
+
+// const scrollHandler = () => {
+//     var load = document.getElementById('movies');
+//     var contentHeight = load.offsetHeight;
+//     var yOffset = window.pageYOffset;
+//     var y = yOffset + window.innerHeight;
+//     if(y >= contentHeight) {
+//         load.innerHTML += load.addEventListener('scroll', getMovies);
+//     }
+//     console.log(load);
+// }
+
+// window.onscroll = scrollHandler();
+
+
+
+
+
+
+
+
+
+
+
