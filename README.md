@@ -31,7 +31,7 @@ This is an Assignment project for the company 24/i. I have been given the proper
 * Upon clicking the specific Movie poster, redirect to the additional movie details page.
 * Adding play button to play the sample video of the movie by using provided video storage API.
 
-### :memo: What can be implemented :memo:
+#### :memo: What can be implemented :memo:
 
 * Loading more images dynamically on scrolling.
 * Playing sample video for a specific selected movie in a precise and better way.
