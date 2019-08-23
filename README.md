@@ -21,7 +21,7 @@ This is an Assignment project for the company 24/i. I have been given the proper
 * **[html5](https://github.com/amuru0S/24-Frames/blob/master/index.html)**
 * **[CSS3](https://github.com/amuru0S/24-Frames/blob/master/CSS/search.css)**
 
-### Goals for this project
+### :trophy: Goals for this project :trophy:
 
 * Upon searching for the movie, able to fetch movies from the provided OMDB API.
 * Design of the page should be appropriate as per the provided guidelines.
