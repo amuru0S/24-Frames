@@ -1,0 +1,120 @@
+.movies-container {
+    display: flex;
+    flex-flow: row;
+    font-family: 'Livvic', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#movie img {
+    float: left;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 7px 0px rgba(0.4, 0.4, 0.4, 0.45);
+    border-radius: 5px;
+    margin: 2%;
+    padding: 0%;
+}
+
+.movieDetails {
+    float: right;
+    text-align: left;
+}
+
+.movieDetails h2 {
+    margin-left: 40px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.list-group ul {
+    word-spacing: 1px;
+    list-style: none;
+    text-indent: -1.3em;
+    margin-left: 0;
+}
+
+strong {
+    margin-right: 10px;
+}
+
+ul li::before {
+    content: "";
+    color: #000;
+    font-weight: 300;
+    display: inline-block;
+    font-size: 2.2em;
+    line-height: 0px;
+    position: relative;
+    top: 0.3em;
+}
+
+ul li {
+    display: flex;
+}
+
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+.ripple:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+#video {
+    margin: 10px;
+    padding: 10px;
+    word-spacing: 1px;
+    font-size: 1em;
+    font-family: 'Livvic', sans-serif;
+    border-radius: 5px;
+    text-transform: capitalize;
+    background: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    color: #000000;
+    border-radius: 2px 2px 7px 0px rgba(0.4, 0.4, 0.4, 0.45);
+    outline: none;
+}
+
+#video:hover {
+    background: #000;
+    color: #fff;
+}
+
+.extraInfo {
+    float: left;
+    margin-left: 2%;
+}
+
+.extraInfo h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: 'Livvic', sans-serif;
+}
+
+.extraInfo span {
+    margin-top: 1px;
+    word-spacing: 1px;
+    font-size: 1em;
+    font-family: 'Livvic', sans-serif;
+}
+
+.extraInfo a {
+    text-decoration: none;
+    font-family: 'Livvic', sans-serif;
+    padding: 10px;
+}
