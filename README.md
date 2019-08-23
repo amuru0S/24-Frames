@@ -4,7 +4,7 @@
 
 ## :loudspeaker: What this project is about :loudspeaker:
 
-This is an Assignment project for the company 24/i. I have been given the proper set of guidelines and enough time, detailing what and how to do the task. This is a pure vanilla Javascript application where the user can search for a specific movie and details of the movie will be displayed beneath the search bar. After the results displayed, you can click on any movie poster to find additional details about that movie. From there you can also redirect to IMDB page of that specific movie or go back to search again. This is developed purely using Vanilla Javascript, Html5 and CSS3 technologies.
+This is an Assignment project for the company 24/i. I have been given the proper set of guidelines and enough time, detailing what and how to do the task. This is a pure vanilla Javascript application where the user can search for a specific movie and details of the movie will be displayed beneath the search bar. After the results displayed, you can click on any movie poster to find additional details about that movie and view a sample video upon clicking play button. From there you can also redirect to IMDB page of that specific movie or go back to search again. This is developed purely using Vanilla Javascript, Html5 and CSS3 technologies.
 
 ### :clipboard: Table of Contents: :clipboard:
 
@@ -34,7 +34,6 @@ This is an Assignment project for the company 24/i. I have been given the proper
 #### :memo: What can be implemented :memo:
 
 * Loading more images dynamically on scrolling.
-* Playing sample video for a specific selected movie in a precise and better way.
 
 ### My git workflow
 
