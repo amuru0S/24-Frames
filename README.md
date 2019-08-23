@@ -1,6 +1,6 @@
 # :tv: 24-Frames :tv:
 
-:heart::point_right: **[Check out the deployed version here](https://samuru-portfolio.netlify.com/)** :point_left::heart:
+:point_right: **[Check out the deployed version here](https://samuru-portfolio.netlify.com/)** :point_left:
 
 ## :loudspeaker: What this project is about :loudspeaker:
 
@@ -8,10 +8,10 @@ This is an Assignment project for the company 24/i. I have been given the proper
 
 ### :clipboard: Table of Contents: :clipboard:
 
-* **[Technologies used]()**
-* **[Goals for this project]()**
-* **[My git workflow]()**
-* **[Useful references]()**
+* **[Technologies used](https://github.com/amuru0S/24-Frames/blob/master/README.md#technologies-used)**
+* **[Goals for this project](https://github.com/amuru0S/24-Frames/blob/master/README.md#goals-for-this-project)**
+* **[My git workflow](https://github.com/amuru0S/24-Frames/blob/master/README.md#my-git-workflow)**
+* **[Useful references](https://github.com/amuru0S/24-Frames/blob/master/README.md#useful-references)**
 
 ### Technologies used 
 
@@ -25,7 +25,7 @@ This is an Assignment project for the company 24/i. I have been given the proper
 
 * Upon searching for the movie, able to fetch movies from the provided OMDB API.
 * Design of the page should be appropriate as per the provided guidelines.
-#### :point_down: If additional time left, we can do the below tasks :point_down:
+#### :point_down: If additional time left, below tasks can be implemented :point_down:
 * Load more images dynamically upon scrolling.
 * Navigate to next page of the images on clicking button.
 * Upon clicking the specific Movie poster, redirect to the additional movie details page.
@@ -42,6 +42,6 @@ In this project I tried to:
 
 ### Useful references
 
-* **[google fonts](https://fonts.google.com/)**
+* **[Google fonts](https://fonts.google.com/)**
 * **[HEX color code picker](https://flatuicolors.com/)**
 * **[ReadMe Icons cheatsheet](https://www.webfx.com/tools/emoji-cheat-sheet/)**
