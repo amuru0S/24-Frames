@@ -52,7 +52,12 @@ getMovie = () =>  {
         .catch(err => console.log(err));
 }
 
+function trim(a) {
+    return a.split(' ').join('');
+}
+
 renderMovie = (movie) => {
+    
     let output = `
 
         <div class="movies-container">
@@ -69,7 +74,7 @@ renderMovie = (movie) => {
                     <li class="list-group-item"><strong>Director: </strong>${movie.Director}</li>
                     <li class="list-group-item"><strong>Writer: </strong>${movie.Writer}</li>
                     <li class="list-group-item"><strong>Actors: </strong>${movie.Actors}</li>
-                    <a href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" target="_blank" class="ripple" id="video">Play</a>
+                    <a href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/${trim(movie.Title)}.mp4" target="_blank" class="ripple" id="video">Play</a>
                 </ul>
             </div>
         </div>  
@@ -84,4 +89,6 @@ renderMovie = (movie) => {
         `;
 
     document.querySelector('#movie').innerHTML = output;
+    
 }
+
