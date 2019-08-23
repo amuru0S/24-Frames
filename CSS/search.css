@@ -4,6 +4,7 @@ html {
 
 body {
     background-color: #852330;
+    font-family: 'Livvic', sans-serif;
 }
 
 .container {
@@ -41,6 +42,28 @@ body {
     border-radius: 10px;
     background: #fff;
     font-size: 2em;
+}
+
+#search:hover {
+    background: lightblue;
+}
+
+.movieInfo {
+    position: absolute;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    float: right;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    margin: 25px;
+}
+
+.movieInfo:hover {
+    color: #000000;
 }
 
 .flex-grid-container {
