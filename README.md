@@ -1,6 +1,6 @@
 # :tv: 24-Frames :tv:
 
-:point_right: **[Check out the deployed version here](https://24-frames.netlify.com/)** :point_left:
+:point_right: **[Check out the deployed version here](https://24-frames.netlify.com)** :point_left:
 
 ## :loudspeaker: What this project is about :loudspeaker:
 
