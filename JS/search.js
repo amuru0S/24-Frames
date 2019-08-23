@@ -68,10 +68,8 @@ renderMovie = (movie) => {
                     <li class="list-group-item"><strong>IMDB Rating: </strong>${movie.imdbRating}</li>
                     <li class="list-group-item"><strong>Director: </strong>${movie.Director}</li>
                     <li class="list-group-item"><strong>Writer: </strong>${movie.Writer}</li>
-                    <li class="list-group-item"><strong>Actors: </strong>${movie.Actors}</li>
-                    <a  href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
-                        <button class="ripple" id="video">Play</button>
-                    </a>
+                    <li class="list-group-item"><strong>Actors: </strong>${moe.Actors}</li>
+                    <a href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" target="_blank" class="ripple" id="video">Play</a>
                 </ul>
             </div>
         </div>  
@@ -79,7 +77,7 @@ renderMovie = (movie) => {
         <div class="extraInfo">
             <h3>Plot</h3><span>${movie.Plot}</span>
             <hr>
-            <a href="http://imdb.com/title/${movie.imdbID} "target="_blank " id="video">View IMDB</a> 
+            <a href="http://imdb.com/title/${movie.imdbID}" target="_blank " id="video">View IMDB</a> 
             <a href="index.html" id="video"> Go Back to Search </a> 
         </div>
 
