@@ -153,4 +153,7 @@ img.scaled {
     #movie img {
         display: none;
     }
+    .movieInfo {
+        display: none;
+    }
 }
